@@ -4,9 +4,9 @@ This is a simple wordpress theme that is integrated to Bootstrap v3.3.4 custom f
 
 ## Required Plugin
 
-* **The Event Calendar
+* The Event Calendar
 
 ## Required Library
 
-* **FontAwsome
-* **JQuery Mobile
+* FontAwsome
+* JQuery Mobile
