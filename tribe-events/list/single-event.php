@@ -31,15 +31,18 @@ $has_venue_address = ( $venue_address ) ? ' location' : '';
 $organizer = tribe_get_organizer();
 
 ?>
+<?php if ($eventDate != tribe_get_start_date( null, false, 'j F Y' )): ?>
 <div class="row">
-	<div class="col-lg-2 text-center">
-		<h2>
-			<?php echo tribe_get_start_date( null, false, 'j' ); ?><br/>
-			<?php echo tribe_get_start_date( null, false, 'F' ); ?><br/>
-			<?php echo tribe_get_start_date( null, false, 'Y' ); ?>
+	<div class="col-lg-2 col-md-3 col-sm-3 hidden-xs text-center text-uppercase container-light">
+		<h2 >
+			<strong>
+				<?php echo tribe_get_start_date( null, false, 'j' ); ?><br/>
+				<?php echo tribe_get_start_date( null, false, 'F' ); ?><br/>
+				<?php echo tribe_get_start_date( null, false, 'Y' ); ?>
+			</strong>
 		</h2>
 	</div>
-	<div class="col-lg-10">
+	<div class="col-lg-10  col-md-9 col-sm-9 hidden-xs">
 		<!-- Event Cost -->
 		<?php if ( tribe_get_cost() ) : ?>
 			<div class="tribe-events-event-cost">
@@ -49,10 +52,72 @@ $organizer = tribe_get_organizer();
 
 		<!-- Event Title -->
 		<?php do_action( 'tribe_events_before_the_event_title' ) ?>
-		<h2 class="tribe-events-list-event-title entry-title summary">
+		<h2 class="tribe-events-list-event-title entry-title summary text-uppercase">
+			<strong>
+				<!-- <a class="url" href="<?php echo esc_url( tribe_get_event_link() ); ?>" title="<?php the_title() ?>" rel="bookmark"> -->
+					<?php the_title() ?>
+				<!-- </a> -->
+			</strong>
+		</h2>
+		<?php do_action( 'tribe_events_after_the_event_title' ) ?>
+
+		<!-- Event Meta -->
+		<?php do_action( 'tribe_events_before_the_meta' ) ?>
+		<div class="tribe-events-event-meta vcard">
+			<div class="author <?php echo $has_venue_address; ?>">
+
+				<!-- Schedule & Recurrence Details -->
+				<div class="updated published time-details">
+					<?php echo tribe_events_event_schedule_details() ?>
+				</div>
+
+				<?php if ( $venue_details ) : ?>
+					<!-- Venue Display Info -->
+					<div class="tribe-events-venue-details">
+						<?php echo implode( ', ', $venue_details ); ?>
+					</div> <!-- .tribe-events-venue-details -->
+				<?php endif; ?>
+
+			</div>
+		</div><!-- .tribe-events-event-meta -->
+		<?php do_action( 'tribe_events_after_the_meta' ) ?>
+
+		<!-- Event Image -->
+		<?php echo tribe_event_featured_image( null, 'medium' ) ?>
+
+		<!-- Event Content -->
+		<?php do_action( 'tribe_events_before_the_content' ) ?>
+		<div class="tribe-events-list-event-description tribe-events-content description entry-summary">
+			<?php the_excerpt() ?>
+			<!-- <a href="<?php echo esc_url( tribe_get_event_link() ); ?>" class="tribe-events-read-more" rel="bookmark"><?php _e( 'Find out more', 'tribe-events-calendar' ) ?> &raquo;</a>-->
+		</div><!-- .tribe-events-list-event-description -->
+		<?php do_action( 'tribe_events_after_the_content' ) ?>
+	</div>
+	<div class="hidden-lg hidden-md hidden-sm col-xs-12 text-center text-uppercase container-light">
+		<h2 >
+			<strong>
+				<?php echo tribe_get_start_date( null, false, 'j' ); ?>
+				<?php echo tribe_get_start_date( null, false, 'F' ); ?>
+				<?php echo tribe_get_start_date( null, false, 'Y' ); ?>
+			</strong>
+		</h2>
+	</div>
+	<div class="hidden-lg hidden-md hidden-sm col-xs-12 text-center ">
+		<!-- Event Cost -->
+		<?php if ( tribe_get_cost() ) : ?>
+			<div class="tribe-events-event-cost">
+				<span><?php echo tribe_get_cost( null, true ); ?></span>
+			</div>
+		<?php endif; ?>
+
+		<!-- Event Title -->
+		<?php do_action( 'tribe_events_before_the_event_title' ) ?>
+		<h2 class="tribe-events-list-event-title entry-title summary text-uppercase">
+			<strong>
 			<!-- <a class="url" href="<?php echo esc_url( tribe_get_event_link() ); ?>" title="<?php the_title() ?>" rel="bookmark"> -->
 				<?php the_title() ?>
 			<!-- </a> -->
+			</strong>
 		</h2>
 		<?php do_action( 'tribe_events_after_the_event_title' ) ?>
 
@@ -89,4 +154,5 @@ $organizer = tribe_get_organizer();
 		<?php do_action( 'tribe_events_after_the_content' ) ?>
 	</div>
 </div>
-<hr/>
+<hr class="hidden-xs"/>
+<?php endif; ?>
