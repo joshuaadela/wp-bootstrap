@@ -155,4 +155,5 @@ $organizer = tribe_get_organizer();
 	</div>
 </div>
 <hr class="hidden-xs"/>
+<br class="hidden-lg hidden-sm hidden-md "/>
 <?php endif; ?>
