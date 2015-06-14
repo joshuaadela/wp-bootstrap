@@ -33,8 +33,8 @@ $organizer = tribe_get_organizer();
 ?>
 <?php if ($eventDate != tribe_get_start_date( null, false, 'j F Y' )): ?>
 <div class="row">
-	<div class="col-lg-2 col-md-3 col-sm-3 hidden-xs text-center text-uppercase container-light">
-		<h2 >
+	<div class="col-lg-2 col-md-3 col-sm-3 hidden-xs text-center text-uppercase container-dark">
+		<h2 style="margin:0px">
 			<strong>
 				<?php echo tribe_get_start_date( null, false, 'j' ); ?><br/>
 				<?php echo tribe_get_start_date( null, false, 'F' ); ?><br/>
@@ -93,8 +93,8 @@ $organizer = tribe_get_organizer();
 		</div><!-- .tribe-events-list-event-description -->
 		<?php do_action( 'tribe_events_after_the_content' ) ?>
 	</div>
-	<div class="hidden-lg hidden-md hidden-sm col-xs-12 text-center text-uppercase container-light">
-		<h2 >
+	<div class="hidden-lg hidden-md hidden-sm col-xs-12 text-center text-uppercase container-dark">
+		<h2 style="margin:0px">
 			<strong>
 				<?php echo tribe_get_start_date( null, false, 'j' ); ?>
 				<?php echo tribe_get_start_date( null, false, 'F' ); ?>
