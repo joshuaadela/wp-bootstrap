@@ -18,8 +18,8 @@ $(document).ready(function() {
   -->
   <div class="carousel-inner">
     <div class="item active"> 
-      <a href="/the-lord-our-banner"><img class="hidden-xs" src="<?php bloginfo('template_url'); ?>/img/slides/desk/fathers-day.jpg" style="width:100%;" alt="Father's Day"></a>
-      <a href="/the-lord-our-banner"><img class="hidden-lg hidden-md hidden-sm" src="<?php bloginfo('template_url'); ?>/img/slides/mob/fathers-day.jpg" style="width:100%;" alt="Father's Day"></a>
+      <a href="/the-lord-our-banner"><img class="hidden-xs" src="<?php bloginfo('template_url'); ?>/img/slides/desk/worship-night.jpg" style="width:100%;" alt="Father's Day"></a>
+      <a href="/the-lord-our-banner"><img class="hidden-lg hidden-md hidden-sm" src="<?php bloginfo('template_url'); ?>/img/slides/mob/worship-night.jpg" style="width:100%;" alt="Father's Day"></a>
       <!--
       <div class="container">
         <div class="carousel-caption">
