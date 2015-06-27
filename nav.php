@@ -111,7 +111,8 @@
 										<li><a href="/serve/create">CREATE</a></li>
 										<li><a href="/serve/assist">ASSIST</a></li>
 										<li><a href="/serve/pray">PRAY</a></li>
-										<li><a href="/serve/learn">LEARN</a></li>
+										<li><a href="/serve/teach">TEACH</a></li>
+										<li><a href="/serve/help">HELP</a></li>
 						  			</ul>
 									<ul class="col-lg-2 col-md-2 col-sm-3 list-unstyled">
 										<li><strong class="sub-nav-header">Connect</strong></li>
@@ -261,6 +262,8 @@
 									<li><a href="/serve/create">CREATE</a></li>
 									<li><a href="/serve/assist">ASSIST</a></li>
 									<li><a href="/serve/pray">PRAY</a></li>
+									<li><a href="/serve/teach">TEACH</a></li>
+									<li><a href="/serve/help">HELP</a></li>
 					  			</ul>
 								<ul class="col-sm-2 list-unstyled">
 									<li><strong class="sub-nav-header">Connect</strong></li>

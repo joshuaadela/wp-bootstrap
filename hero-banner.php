@@ -18,32 +18,6 @@ $(document).ready(function() {
   -->
 	<div class="carousel-inner">
 		<div class="item active"> 
-			<a href="/calendar"><img class="hidden-xs" src="<?php bloginfo('template_url'); ?>/img/slides/desk/monthly-prayer-and-fasting-june.jpg" style="width:100%;" alt="Monthly Prayer and Fasting June"></a>
-			<a href="/calendar"><img class="hidden-lg hidden-md hidden-sm" src="<?php bloginfo('template_url'); ?>/img/slides/mob/monthly-prayer-and-fasting-june.jpg" style="width:100%;" alt="Monthly Prayer and Fasting June"></a>
-			<!--
-			<div class="container">
-			<div class="carousel-caption">
-			  <h1>Slide 1</h1>
-			  <p>Aenean a rutrum nulla. Vestibulum a arcu at nisi tristique pretium.</p>
-			  <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-			</div>
-			</div>
-			-->
-		</div>
-		<div class="item"> 
-			<a href="/calendar"><img class="hidden-xs" src="<?php bloginfo('template_url'); ?>/img/slides/desk/worship-night.jpg" style="width:100%;" alt="Father's Day"></a>
-			<a href="/calendar"><img class="hidden-lg hidden-md hidden-sm" src="<?php bloginfo('template_url'); ?>/img/slides/mob/worship-night.jpg" style="width:100%;" alt="Father's Day"></a>
-			<!--
-			<div class="container">
-			<div class="carousel-caption">
-			  <h1>Slide 1</h1>
-			  <p>Aenean a rutrum nulla. Vestibulum a arcu at nisi tristique pretium.</p>
-			  <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-			</div>
-			</div>
-			-->
-		</div>
-		<div class="item"> 
 			<a href="/the-lord-our-banner"><img class="hidden-xs" src="<?php bloginfo('template_url'); ?>/img/slides/desk/the-lord-our-banner.jpg" style="width:100%;" alt="Nissi: The Lord Our Banner"></a>
 			<a href="/the-lord-our-banner"><img class="hidden-lg hidden-md hidden-sm" src="<?php bloginfo('template_url'); ?>/img/slides/mob/the-lord-our-banner.jpg" style="width:100%;" alt="Nissi: The Lord Our Banner"></a>
 			<!--
