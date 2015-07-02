@@ -1,8 +1,3 @@
-<?php
-/*
-Single Post Template: Podcast
-*/
-?>
 <?php get_header(); ?>
 	<div class="container container-white">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -15,28 +10,7 @@ Single Post Template: Podcast
 					</div>
 					<hr/>
 					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12 hidden-xs">
-							<div class="pull-left post-thumbnail">
-							<?php
-							if ( has_post_thumbnail() ) {
-								the_post_thumbnail();
-							}
-							?>
-							</div>
-							<p><?php the_content(__('(more...)')); ?></p>
-						</div>
-						<div class="hidden-lg hidden-md hidden-sm">
-							<div class="post-thumbnail">
-								<center>
-									<?php
-									if ( has_post_thumbnail() ) {
-										the_post_thumbnail('full', array( 'class' => 'img-responsive col-xs-12' ));
-									}
-									?>
-								</center>
-							</div>
-						</div>
-						<div class="hidden-lg hidden-md hidden-sm col-xs-12">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<p><?php the_content(__('(more...)')); ?></p>
 						</div>
 					</div>
