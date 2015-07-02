@@ -22,80 +22,18 @@ Template Name: Podcast Page
 						$wp_query->query('cat=9&paged='.$paged);
 						$tb_counter = 1;
 						?>
-						<div class=" hidden-lg hidden-md hidden-sm">
-							<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-								<div class="row">
-									<a href="<?php the_permalink(); ?>">
-										<?php
-										if ( has_post_thumbnail() ) {
-											the_post_thumbnail('full', array( 'class' => 'img-responsive col-xs-12' ));
-										}
-										?>
-									</a>
-								</div>
-								<br/>
-							<?php $tb_counter++; endwhile; ?>
-						</div>
-						<div class="hidden-lg hidden-md hidden-xs">
-							<?php $sm_count = 0 ?>
+						<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 							<div class="row">
-							<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-								<?php $sm_count++; ?>
 								<a href="<?php the_permalink(); ?>">
 									<?php
 									if ( has_post_thumbnail() ) {
-										the_post_thumbnail('full', array( 'class' => 'img-responsive col-sm-6 ' ));
+										the_post_thumbnail('full', array( 'class' => 'img-responsive col-xs-12 col-sm-12 col-md-12 col-lg-12' ));
 									}
 									?>
 								</a>
-								<?php if($sm_count%2 == 0):?>
-									</div>
-									<br/>
-									<div class="row">
-								<?php endif; ?>
-							<?php $tb_counter++; endwhile; ?>
 							</div>
-						</div>
-						<div class="hidden-lg hidden-sm hidden-xs">
-							<?php $md_count = 0 ?>
-							<div class="row">
-							<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-								<?php $md_count++; ?>
-								<a href="<?php the_permalink(); ?>">
-									<?php
-									if ( has_post_thumbnail() ) {
-										the_post_thumbnail('full', array( 'class' => 'img-responsive col-md-4' ));
-									}
-									?>
-								</a>
-								<?php if($md_count%3 == 0): ?>
-									</div>
-									<br/>
-									<div class="row">
-								<?php endif; ?>
-							<?php $tb_counter++; endwhile; ?>
-							</div>
-						</div>
-						<div class="hidden-md hidden-sm hidden-xs">
-							<?php $lg_count = 0 ?>
-							<div class="row">
-							<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-								<?php $lg_count++; ?>
-								<a href="<?php the_permalink(); ?>">
-									<?php
-									if ( has_post_thumbnail() ) {
-										the_post_thumbnail('full', array( 'class' => 'img-responsive col-lg-3' ));
-									}
-									?>
-								</a>
-								<?php if($lg_count%4 == 0): ?>
-									</div>
-									<br/>
-									<div class="row">
-								<?php endif; ?>
-							<?php $tb_counter++; endwhile; ?>
-							</div>
-						</div>
+							<br/>
+						<?php $tb_counter++; endwhile; ?>
 						<?php $wp_query = NULL; $wp_query = $temp;?>
 					</div>
 				</div>
