@@ -233,4 +233,8 @@ html, body, #map-canvas {
 	margin-right: auto;
 	margin-left: auto;
 }
-
+.post-thumbnail img{
+	margin-right: 10px;
+	margin-bottom: 5px;
+	margin-top: 15px;
+}
