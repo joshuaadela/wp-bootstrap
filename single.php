@@ -19,7 +19,6 @@
 							?>
 							</div>
 							<p><?php the_content(__('(more...)')); ?></p>
-							<p>by <?php the_author() ?></p>
 						</div>
 						<div class="hidden-lg hidden-md hidden-sm">
 							<div class="post-thumbnail">
@@ -34,7 +33,6 @@
 						</div>
 						<div class="hidden-lg hidden-md hidden-sm col-xs-12">
 							<p><?php the_content(__('(more...)')); ?></p>
-							<p>by <?php the_author() ?></p>
 						</div>
 					</div>
 				</div>
