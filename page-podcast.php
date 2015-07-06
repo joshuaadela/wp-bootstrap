@@ -34,9 +34,16 @@ Template Name: Podcast Page
 									</a>
 								</div>
 								<br/>
-							<?php else: ?>
-								<div class="hidden-sm hidden-xs">
-									<div class="row">
+							<?php endif; ?>
+						<?php $tb_counter++; endwhile; ?>
+
+						<?php $tb_counter = 0; ?>
+						<div class="hidden-sm hidden-xs">
+							<div class="row">
+								<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+									<?php $tb_counter++; ?>
+									<?php if ($tb_counter > 1): ?>
+										
 										<a href="<?php the_permalink(); ?>">
 											<?php
 											if ( has_post_thumbnail() ) {
@@ -49,10 +56,18 @@ Template Name: Podcast Page
 											<br/>
 											<div class="row">
 										<?php endif; ?>
-									</div>
-								</div>
-								<div class="hidden-md hidden-lg">
-									<div class="row">
+									<?php endif; ?>
+								<?php endwhile; ?>
+							</div>
+						</div>
+
+						<?php $tb_counter = 0; ?>
+						<div class="hidden-md hidden-lg">
+							<div class="row">
+								<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+									<?php $tb_counter++; ?>
+									<?php if ($tb_counter > 1): ?>
+
 										<a href="<?php the_permalink(); ?>">
 											<?php
 											if ( has_post_thumbnail() ) {
@@ -65,10 +80,10 @@ Template Name: Podcast Page
 											<br/>
 											<div class="row">
 										<?php endif; ?>
-									</div>
-								</div>
-							<?php endif; ?>
-						<?php $tb_counter++; endwhile; ?>
+									<?php endif; ?>
+								<?php endwhile; ?>
+							</div>
+						</div>
 						<?php $wp_query = NULL; $wp_query = $temp;?>
 					</div>
 				</div>

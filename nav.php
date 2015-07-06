@@ -33,6 +33,7 @@
 									<ul class="col-lg-2 col-md-2 col-sm-3 list-unstyled">
 										<li><strong class="sub-nav-header">Connect</strong></li>
 										<li><a href="https://www.facebook.com/jilsingapore" target="_blank">Facebook</a></li>
+										<li><a href="https://twitter.com/jilsingapore" target="_blank">Twitter</a></li>
 										<li><a href="https://soundcloud.com/jilsingapore" target="_blank">SoundCloud</a></li>
 										<!-- <li><a href="https://www.youtube.com/user/jilsingapore" target="_blank">Youtube</a></li> -->
 										<li><a href="https://vimeo.com/jilsingapore" target="_blank">Vimeo</a></li>
@@ -73,6 +74,7 @@
 									<ul class="col-lg-2 col-md-2 col-sm-3 list-unstyled">
 										<li><strong class="sub-nav-header">Connect</strong></li>
 										<li><a href="https://www.facebook.com/jilsingapore" target="_blank">Facebook</a></li>
+										<li><a href="https://twitter.com/jilsingapore" target="_blank">Twitter</a></li>
 										<li><a href="https://soundcloud.com/jilsingapore" target="_blank">SoundCloud</a></li>
 										<!-- <li><a href="https://www.youtube.com/user/jilsingapore" target="_blank">Youtube</a></li> -->
 										<li><a href="https://vimeo.com/jilsingapore" target="_blank">Vimeo</a></li>
@@ -117,6 +119,7 @@
 									<ul class="col-lg-2 col-md-2 col-sm-3 list-unstyled">
 										<li><strong class="sub-nav-header">Connect</strong></li>
 										<li><a href="https://www.facebook.com/jilsingapore" target="_blank">Facebook</a></li>
+										<li><a href="https://twitter.com/jilsingapore" target="_blank">Twitter</a></li>
 										<li><a href="https://soundcloud.com/jilsingapore" target="_blank">SoundCloud</a></li>
 										<!-- <li><a href="https://www.youtube.com/user/jilsingapore" target="_blank">Youtube</a></li> -->
 										<li><a href="https://vimeo.com/jilsingapore" target="_blank">Vimeo</a></li>
@@ -184,6 +187,7 @@
 								<ul class="col-sm-2 list-unstyled">
 									<li><strong class="sub-nav-header">Connect</strong></li>
 									<li><a href="https://www.facebook.com/jilsingapore" target="_blank">Facebook</a></li>
+									<li><a href="https://twitter.com/jilsingapore" target="_blank">Twitter</a></li>
 									<li><a href="https://soundcloud.com/jilsingapore" target="_blank">SoundCloud</a></li>
 									<!-- <li><a href="https://www.youtube.com/user/jilsingapore" target="_blank">Youtube</a></li> -->
 									<li><a href="https://vimeo.com/jilsingapore" target="_blank">Vimeo</a></li>
@@ -224,6 +228,7 @@
 								<ul class="col-sm-2 list-unstyled">
 									<li><strong class="sub-nav-header">Connect</strong></li>
 									<li><a href="https://www.facebook.com/jilsingapore" target="_blank">Facebook</a></li>
+									<li><a href="https://twitter.com/jilsingapore" target="_blank">Twitter</a></li>
 									<li><a href="https://soundcloud.com/jilsingapore" target="_blank">SoundCloud</a></li>
 									<!-- <li><a href="https://www.youtube.com/user/jilsingapore" target="_blank">Youtube</a></li> -->
 									<li><a href="https://vimeo.com/jilsingapore" target="_blank">Vimeo</a></li>
@@ -268,6 +273,7 @@
 								<ul class="col-sm-2 list-unstyled">
 									<li><strong class="sub-nav-header">Connect</strong></li>
 									<li><a href="https://www.facebook.com/jilsingapore" target="_blank">Facebook</a></li>
+									<li><a href="https://twitter.com/jilsingapore" target="_blank">Twitter</a></li>
 									<li><a href="https://soundcloud.com/jilsingapore" target="_blank">SoundCloud</a></li>
 									<!-- <li><a href="https://www.youtube.com/user/jilsingapore" target="_blank">Youtube</a></li> -->
 									<li><a href="https://vimeo.com/jilsingapore" target="_blank">Vimeo</a></li>
