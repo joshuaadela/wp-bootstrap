@@ -1,14 +1,19 @@
 <script>
-$(document).ready(function() {
-	$("#home-slider").swiperight(function() {
-		$(this).carousel('prev');
+	$(document).ready(function() {
+		$("#home-slider").swiperight(function() {
+			$(this).carousel('prev');
+		});
+		$("#home-slider").swipeleft(function() {
+			$(this).carousel('next');
+		});
 	});
-	$("#home-slider").swipeleft(function() {
-		$(this).carousel('next');
-	});
-});
+
 </script>
-<div id="home-slider" class="carousel slide" data-ride="carousel" > 
+<div class="embed-responsive embed-responsive-16by9">
+	<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/133833345?autoplay=1&title=0&byline=0&portrait=0&color=444444&api=1"></iframe> 
+</div>
+
+<div id="home-slider" class="carousel slide" data-ride="carousel" style="display:none"> 
 	<!-- 
   <ol class="carousel-indicators">
 	<li data-target="#home-slider" data-slide-to="0" class="active"></li>

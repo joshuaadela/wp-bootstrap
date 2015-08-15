@@ -31,13 +31,15 @@ $has_venue_address = ( $venue_address ) ? ' location' : '';
 $organizer = tribe_get_organizer();
 
 ?>
+
+
 <?php if ($eventDate != tribe_get_start_date( null, false, 'j F Y' )): ?>
 <div class="row">
 	<div class="col-lg-2 col-md-3 col-sm-3 hidden-xs text-center text-uppercase container-dark">
 		<h2 style="margin:0px">
 			<strong>
 				<?php echo tribe_get_start_date( null, false, 'j' ); ?><br/>
-				<?php echo tribe_get_start_date( null, false, 'F' ); ?><br/>
+				<?php echo tribe_get_start_date( null, false, 'M' ); ?><br/>
 				<?php echo tribe_get_start_date( null, false, 'Y' ); ?>
 			</strong>
 		</h2>
